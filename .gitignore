@@ -1,0 +1,26 @@
+# Eclipse project files
+.classpath
+.project
+.settings
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea
+
+
+# Mac tmp files
+.DS_Store
+
+
+# Project dev files
+*.log
+
+.keep
+node_modules
+build
+js
+bower
+dist
+*app

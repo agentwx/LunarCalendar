@@ -1,0 +1,27 @@
+{
+  "name": "lc",
+  "version": "0.0.1",
+  "authors": [
+    "sinceow <sinceow@163.com>"
+  ],
+  "description": "lunar calendar",
+  "keywords": [
+    "lunar",
+    "calendar"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "Public/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies":{
+    "json3": "~3.3.2",
+    "jquery": ">=2.1.1",
+    "jquery-hammerjs": "~2.0.0",
+    "materialize": "~0.97.0",
+    "fontawesome": "~4.3.0",
+    "animate.css": "~3.2.5"
+  }
+}

@@ -1,0 +1,225 @@
+@import "../bower/materialize/sass/materialize";
+@import "../bower/fontawesome/scss/font-awesome";
+
+
+.row {
+    margin-bottom: 10px;
+    .col {
+        padding: 0;
+    }
+
+}
+
+.fa-refresh{
+    &:hover{
+        @extend .fa-spin;
+    }
+}
+
+.fa-power-off{
+    &:hover{
+        color: color("red", "lighten-2");
+    }
+}
+
+.clearfix{
+    clear: both;
+}
+
+.header{
+    background: color("grey", "lighten-2");
+    padding: 16px 0 !important;
+    border-top: 1px solid color("grey", "base");
+    border-bottom: 1px solid color("grey", "base");
+    .head {
+        width: (97% / 7);
+        &.weekend {
+            color: color("red", "lighten-2");
+        }
+    }
+}
+
+
+.oneofseven {
+    width: (90% / 7);
+    margin: 0 2px;
+    cursor: pointer;
+    &:hover {
+        background: color("teal", "lighten-2");
+        color: #FFF;
+        @extend .z-depth-1;
+
+        .date-block-festival {
+            color: #FFF;
+
+            &.lunar-fest {
+                color: #FFF;
+            }
+        }
+    }
+
+    &.today {
+        background: color("teal", "lighten-2");
+        color: #FFF;
+        .date-block-festival {
+            color: #FFF;
+        }
+        @extend .z-depth-1;
+    }
+
+    &.weekend {
+        color: color("red", "lighten-2");
+    }
+
+    &.overmonth {
+        color: color("grey", "lighten-1");
+
+        &:hover {
+            color: #FFF;
+        }
+
+        .date-block-festival {
+            color: color("grey", "lighten-1");
+        }
+    }
+
+    .date-block-day {
+        width: 100%;
+        text-align: center;
+        display: block;
+        font-size: 16px;
+    }
+
+    .date-block-festival {
+        color: color("grey", "base");
+        display: block;
+        font-size: 11px;
+        width: 100%;
+        text-align: center;
+        padding: 0 5%;
+        @extend .truncate;
+
+        &.lunar-fest {
+            color: color("red", "base");
+        }
+    }
+
+    &.chosenday {
+        background: color("teal", "base");
+        color: #FFF;
+        .date-block-festival {
+            color: #FFF;
+        }
+        @extend .z-depth-1;
+    }
+}
+
+.date-controller {
+    padding: 10px 0;
+
+    a {
+        color: color("teal", "base");
+        display: inline-block;
+
+        &:hover{
+            text-shadow:  2px 2px 2px color("grey", "lighten-2");
+        }
+    }
+
+    button {
+        margin-top: -10px;
+    }
+
+    .year-block {
+        margin: 0 20px 0 10px;
+        font-size: 18px;
+        display: inline-block;
+
+    }
+    .month-block {
+        margin: 0 10px 0 0;
+        font-size: 18px;
+        width: 40px;
+        display: inline-block;
+    }
+
+}
+
+.lunar-panel {
+    .ganzhi {
+        height: 50px;
+        line-height: 50px;
+        background: color("teal", "darken-1");
+        color: #FFF;
+        text-align: center;
+
+        .ganzhi-detail {
+            margin: 0 10px;
+        }
+    }
+
+    .daynumber {
+        background: color("teal", "lighten-1");
+        color: #FFF;
+        text-align: center;
+        position: relative;
+        h1 {
+            font-size: 100px;
+            text-align: center;
+            margin: 0;
+            padding: 60px 0 40px 0;
+            @extend .z-depth-1;
+        }
+
+        .lunar-detail {
+            font-size: 26px;
+            margin: 5px 0 0 0;
+            padding: 20px 0;
+            &> span{
+                margin: 0 5px;
+            }
+        }
+        .solar-panel {
+            position: absolute;
+            color: color("teal", "lighten-4");
+            left: 50px;
+            top: 75px;
+            font-size: 24px;
+            .solar-detail {
+                display: block;
+            }
+        }
+        .festival-panel {
+            position: absolute;
+            right: 10px;
+            top: 75px;
+            color: color("teal", "lighten-4");
+            font-size: 14px;
+
+            .festival-detail {
+                display: block;
+
+                &.lunar {
+                    color: color("red", "lighten-4");
+                }
+
+                &.term {
+                    color: color("red", "lighten-4");
+                }
+            }
+        }
+
+        .hl-panel {
+            background: color("teal", "base");
+            padding: 20px 0;
+
+            .hl-detail {
+                text-align: left;
+                margin: 0;
+                padding: 5px 10px 0 10px;
+                @extend .truncate;
+            }
+        }
+    }
+}
+

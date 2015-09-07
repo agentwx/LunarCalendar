@@ -1,0 +1,24 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LC</title>
+    <link rel="stylesheet" href="build/bundle.min.css"/>
+</head>
+<body>
+
+</body>
+<!--
+<script type="text/javascript" src="./bower/jquery/dist/jquery.min.js"></script>-->
+<script type="text/javascript">
+
+    /**
+     * 由于jQuery中已经定义了 "module", 使用browserify加载依赖会使得在node环境下
+     * 出现"jQuery undefined", 在生成APP时需注释上面的jQuery引用，解掉下面引用的注释
+     */
+    window.$ = window.jQuery = require("./bower/jquery/dist/jquery.min");
+    window.Hammer = require("./bower/hammerjs/hammer.min");
+    window.ipc = require("ipc");
+</script>
+<script src="build/bundle.min.js"></script>
+</html>
