@@ -1,5 +1,9 @@
 #LunarCalendar
 
+这份代码的源地址是在http://git.oschina.net/sinceow/LunarCalendar，我在github上搜过没有ta，我喜欢这个日历但是不太喜欢这个皮肤，所以我把代码拿过来希望有时间的话可以改一下~
+
+===
+
 基于 [electron](https://github.com/atom/electron) + [menubar](https://github.com/maxogden/menubar) + [react](https://github.com/facebook/react) + [materialize](https://github.com/Dogfalo/materialize) 
 构建的`工具栏日历应用`，适用于Mac，Windows，Linux平台。
 
