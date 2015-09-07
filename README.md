@@ -1,6 +1,6 @@
 #LunarCalendar
 
-这份代码的源地址是在http://git.oschina.net/sinceow/LunarCalendar，我在github上搜过没有ta，我喜欢这个日历但是不太喜欢这个皮肤，所以我把代码拿过来希望有时间的话可以改一下~
+这份代码的源地址是在[http://git.oschina.net/sinceow/LunarCalendar](https://github.com/zzyss86/LunarCalendar) ，我在github上搜过没有ta，我喜欢这个日历但是不太喜欢这个皮肤，所以我把代码拿过来希望有时间的话可以改一下~
 
 ===
 
